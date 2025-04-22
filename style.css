@@ -1,0 +1,253 @@
+/* ..................................................reset CSS........................................................................ */
+* {
+	margin: 0;
+	padding: 0;
+	/* tự co dan conten cho phù hợp tránh trường hợp bể conten*/
+	box-sizing: border-box;
+}
+
+body {
+	background: #020024;
+	background: linear-gradient(146deg, rgba(2, 0, 36, 1) 18%, rgba(9, 9, 121, 1) 59%, rgba(0, 212, 255, 1) 100%);
+	min-height: 100vh;
+	color: white;
+
+}
+
+/* gói gọn không để lọt ra ngoài  */
+.container {
+	max-width: 1200px;
+	/* căn giữa */
+	margin: 0 auto;
+	padding: 20px;
+
+}
+
+/* ..................................................header CSS........................................................................... */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top:0;
+}
+
+.logo {
+	font-size: 40px;
+	font-weight: 500;
+	background: linear-gradient(90deg, rgba(24, 81, 196, 1) 23%, rgba(29, 99, 204, 1) 28%, rgba(33, 188, 219, 1) 71%);
+	/* đổi màu nền sang màu chữ  */
+	background-clip: text;
+	color: transparent;
+
+}
+
+nav ul {
+	display: flex;
+	gap: 15px;
+	/* tắt dấu chấm trc mỗi thứ tự  */
+	list-style: none;
+}
+
+nav a {
+	/* tắt dấu gạch chân của đường dẫn link */
+	text-decoration: none;
+	color: white;
+}
+
+.button {
+	background: linear-gradient(90deg, rgba(24, 81, 196, 1) 23%, rgba(29, 99, 204, 1) 28%, rgba(33, 188, 219, 1) 71%);
+	color: white;
+	padding: 10px 15px;
+	/* bo tròn viền */
+	border-radius: 40px;
+	/* ẩn viền */
+	border: none;
+	outline: none;
+	/* đổi hình khi di chuột vào nút ấn được */
+	cursor: pointer;
+	/* delay */
+	transition: all 0.3s ease;
+
+
+}
+
+/* .......................................................main........................................ */
+main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
+	flex-wrap: wrap;
+
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.content h1 {
+	font-size: 45px;
+}
+
+.content h1 span {
+	background: linear-gradient(90deg, rgba(24, 81, 196, 1) 23%, rgba(29, 99, 204, 1) 28%, rgba(33, 188, 219, 1) 71%);
+	/* đổi màu nền sang màu chữ  */
+	background-clip: text;
+	color: transparent;
+}
+
+.content p:nth-of-type(1) {
+	font-size: 35px;
+	color: rgb(90, 119, 144);
+}
+
+.content p:nth-of-type(2) {
+	font-size: 25px;
+	color: rgb(227, 235, 241);
+}
+
+.readMore {
+	background: transparent;
+	border: 1px solid rgb(57, 106, 205);
+	;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+/* di chuột vào sẽ có hiệu ứng */
+.start:hover {
+	transform: translateY(-3px);
+	box-shadow: -1px 3px 8px 2px rgb(57, 106, 205);
+
+}
+
+/* pseudo */
+.readMore::before {
+	content: "";
+	position: absolute;
+	background: linear-gradient(90deg, rgba(24, 81, 196, 1) 23%, rgba(29, 99, 204, 1) 28%, rgba(33, 188, 219, 1) 71%);
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transition: all 0.3s;
+	z-index: -1;
+
+}
+
+.readMore:hover::before {
+	width: 100%;
+
+}
+
+/* ..............................img............................ */
+.image_container {
+	transition: 0.5s;
+}
+
+.image_container:hover {
+	filter: drop-shadow(-2px 4px 2px rgb(1, 132, 247));
+	transform: translateY(-20px) scale(1.05);
+
+}
+
+/* ................................................................................................ */
+.card {
+	display: flex;
+	gap: 10px;
+}
+
+.box {
+	width: 200px;
+	height: 140px;
+	backdrop-filter: blur(20px);
+	border-radius: 10px;
+	border: 1px solid;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	transition: 0.5s;
+
+}
+
+.box p:nth-of-type(1) {
+	font-size: 14px;
+	color: white;
+	margin: 10px 10px;
+}
+
+h4 {
+	margin: 10px 10px;
+}
+
+.box:hover {
+	transform: translateY(-3px);
+	box-shadow: -1px 3px 8px 2px rgb(57, 106, 205);
+}
+
+.box:hover .miniLogo {
+	transform: scale(1.25);
+	/* chuyeen doi mau nen  */
+	background-color: rgb(18, 100, 224);
+	box-shadow: -1px 3px 8px 2px rgb(57, 106, 205);
+}
+
+.box:hover .img_Logo {
+	transform: rotate(360deg);
+	/* chuyen mau logo */
+	background: linear-gradient(90deg, rgb(247, 246, 246) 23%);
+	background-clip: text;
+	color: transparent;
+
+}
+
+.community {
+	width: 410px;
+	height: 140px;
+}
+
+.miniLogo {
+	background: rgb(148, 148, 158);
+	padding: 10px;
+	border-radius: 100%;
+	border: none;
+	outline: none;
+	margin: 10px 10px;
+}
+
+.img_Logo {
+	transition: 0.5s;
+	background: linear-gradient(90deg, rgba(24, 81, 196, 1) 23%, rgba(29, 99, 204, 1) 28%, rgba(33, 188, 219, 1) 71%);
+	background-clip: text;
+	color: transparent;
+
+}
+/* ............................................................................... */
+.iconsLink ul{
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+	list-style: none;
+}
+.icons{
+	background: none;
+	padding: 10px;
+	border-radius: 100%;
+	border: none;
+	outline: none;
+}
+.icons i:hover{
+	transform: translateY(-3px);
+	box-shadow: -1px 3px 8px 2px rgb(3, 29, 82);
+}
+.tag{
+	text-align: center;
+	font-size: 10px;
+	color: rgb(1, 3, 6);
+}
+
+
