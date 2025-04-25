@@ -42,7 +42,7 @@ header {
 
 }
 nav li{
-	/* text-decoration: none; */
+	text-decoration: none;
 	/* margin: 0 0.75em 0 0.75em; */
 }
 
@@ -52,22 +52,22 @@ nav ul {
 	/* tắt dấu chấm trc mỗi thứ tự  */
 	list-style: none;
 	/*  */
-	/* flex-wrap: wrap; */
+	flex-wrap: wrap;
 }
 
 nav a {
 	/* tắt dấu gạch chân của đường dẫn link */
 	text-decoration: none;
 	color: white;
-	/* text-transform: none;
-	transition: 0.25s ease; */
-}
+	 text-transform: none;
+	transition: 0.25s ease;
+} 
 ul:hover a{
-	 /* color: rgb(118, 122, 127); */
+	 color: rgb(118, 122, 127);
 } 
 ul:hover a:hover{
-	/* color: #8EAAFB;
-	box-shadow: 0 2px 0 0 currentColor; */
+	color: #8EAAFB;
+	box-shadow: 0 2px 0 0 currentColor;
 }
 
 .button {
