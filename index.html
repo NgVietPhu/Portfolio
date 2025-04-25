@@ -10,10 +10,15 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-	<script src="./main.js"></script>
+	<div id="particles-js"></div>
+	
 	<div class="container">
 		<header>
 			<div class="logo">VIETPHU</div>
@@ -21,16 +26,16 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="">Home</a>
+						<a class="inDex" href="">Home</a>
 					</li>
 					<li>
-						<a href="">About</a>
+						<a class="inDex" href="">About</a>
 					</li>
 					<li>
-						<a href="">Courses</a>
+						<a class="inDex" href="">Courses</a>
 					</li>
 					<li>
-						<a href="">Blog</a>
+						<a class="inDex" href="">Blog</a>
 					</li>
 				</ul>
 			</nav>
@@ -39,6 +44,9 @@
 					contact
 					<i class="fa-solid fa-handshake"></i>
 				</button>
+				<div class="bars">
+					<i class="fa-solid fa-bars"></i>
+				</div>
 
 			</div>
 		</header>
@@ -86,39 +94,36 @@
 			</div>
 		</main>
 		<div>
-			<hr>
+			<div class="line"></div>
 			<div class="iconsLink">
 				<ul>
 					<button class="icons">
 						<li>
-							<a target="_blank" href="https://www.facebook.com/nguyen.viet.phu.251993?locale=vi_VN" ><i class="fa-brands fa-facebook-f"></i></a>
+							<a class="in4" target="_blank" href="https://www.facebook.com/nguyen.viet.phu.251993?locale=vi_VN" ><i  class="fa-brands fa-facebook-f "></i></a>
 							
 						</li>
 					</button>
 					<button class="icons">
 						<li>
-							<a target="_blank" href="https://github.com/NgVietPhu" ><i class="fa-brands fa-github"></i></a>
-							
+							<a class="in4" target="_blank" href="https://github.com/NgVietPhu" ><i class="fa-brands fa-github "></i></a>
 						</li></button>
 					<button class="icons">
 						<li>
-							<a target="_blank" href="https://www.tiktok.com/@vpu_06" ><i class="fa-brands fa-tiktok"></i></a>
-							
+							<a class="in4" target="_blank" href="https://www.tiktok.com/@vpu_06" ><i class="fa-brands fa-tiktok "></i></a>
 						</li>
 					</button>
 					<button class="icons">
 						<li>
-							<a target="_blank" href="https://www.instagram.com/vpu_06/" ><i class="fa-brands fa-instagram"></i></a>
-							
+							<a class="in4" target="_blank" href="https://www.instagram.com/vpu_06/" ><i class="fa-brands fa-instagram "></i></a>
 						</li>
 					</button>
 				</ul>
-				<p class="tag">@vietphu</p>
 			</div>
+			<p class="tag">@vietphu</p>
 		</div>
 	</div>
-
-
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="./main.js"></script>
 </body>
 
 </html>
