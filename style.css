@@ -41,18 +41,33 @@ header {
 	color: transparent;
 
 }
+nav li{
+	text-decoration: none;
+	/* margin: 0 0.75em 0 0.75em; */
+}
 
 nav ul {
 	display: flex;
 	gap: 15px;
 	/* tắt dấu chấm trc mỗi thứ tự  */
 	list-style: none;
+	/*  */
+	flex-wrap: wrap;
 }
 
 nav a {
 	/* tắt dấu gạch chân của đường dẫn link */
 	text-decoration: none;
 	color: white;
+	text-transform: none;
+	transition: 0.25s ease;
+}
+ul:hover a{
+	color: rgb(118, 122, 127);
+}
+ul:hover a:hover{
+	color: #8EAAFB;
+	box-shadow: 0 2px 0 0 currentColor;
 }
 
 .button {
@@ -171,7 +186,7 @@ main {
 	cursor: pointer;
 	transition: all 0.3s ease;
 	transition: 0.5s;
-
+	
 }
 
 .box p:nth-of-type(1) {
